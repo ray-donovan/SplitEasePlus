@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".Index">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TableRow android:layout_width="0dp">
+
+            <TextView
+                android:id="@+id/tv_equal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/equal"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="0"
+                android:checked="false"
+                android:gravity="center"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:showText="false"
+                android:switchMinWidth="50dp"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:thumb="@drawable/thumb_selector"
+                android:track="@drawable/track_selector" />
+
+            <TextView
+                android:id="@+id/tv_custom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/custom"
+                android:textColor="@color/dark_grey"
+                android:textSize="17sp" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <FrameLayout
+        android:id = "@+id/frameLayout"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        />
+
+</LinearLayout>
